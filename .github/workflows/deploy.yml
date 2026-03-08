@@ -1,0 +1,49 @@
+name: Daily News Crawl & Deploy
+
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 매일 UTC 22:00 (KST 07:00)
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'crawler.py'
+      - 'index.html'
+      - 'app.js'
+      - 'requirements.txt'
+
+jobs:
+  crawl-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run crawler
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python crawler.py
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || git commit -m "chore: update news data [skip ci]"
+          git push
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npm install -g wrangler
+          wrangler pages deploy . --project-name=ai-dailyk --branch=main
