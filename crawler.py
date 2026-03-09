@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import json, os, re, hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urljoin
@@ -10,7 +10,7 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
 }
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-_T = datetime.now()
+_T = datetime.now(timezone(timedelta(hours=9)))  # KST 기준
 
 TODAY_PATTERNS = list({
     _T.strftime("%Y-%m-%d"), _T.strftime("%Y.%m.%d"), _T.strftime("%Y/%m/%d"),
