@@ -45,7 +45,8 @@ executor = ThreadPoolExecutor(max_workers=2)
 class GenerateRequest(BaseModel):
     id:    str
     media: str            # "enet" | "senior"
-    url:   Optional[str] = None  # 직접 제공 시 data.json 조회 생략
+    url:   Optional[str] = None   # 직접 제공 시 data.json 조회 생략
+    title: Optional[str] = None   # fallback 본문 생성용
 
 
 # ── SSE 헬퍼 ─────────────────────────────────────────────────
@@ -91,20 +92,18 @@ async def generate(req: GenerateRequest):
                 yield sse({"type": "error", "message": "원문 URL이 없습니다."})
                 return
 
-            # ── STEP 1: 원문 수집 ────────────────────────────
+            # ── STEP 1: 원문 수집 (실패 시 제목+URL fallback) ──
             yield sse({"step": 1, "status": "running"})
-            try:
-                body = await loop.run_in_executor(
-                    executor, W.fetch_full_text, url
-                )
-            except RuntimeError as e:
-                yield sse({"type": "error", "message": str(e)})
-                return
+            title = req.title or ""
+            body, is_fallback = await loop.run_in_executor(
+                executor, W.fetch_full_text_or_fallback, url, title
+            )
             await loop.run_in_executor(
                 executor, lambda: W.save_source(article_id, body)
             )
             yield sse({"step": 1, "status": "done",
-                       "chars": len(body.replace(" ", ""))})
+                       "chars": len(body.replace(" ", "")),
+                       "fallback": is_fallback})
 
             # ── STEP 2: 구조 분석 (GPT) ──────────────────────
             yield sse({"step": 2, "status": "running"})

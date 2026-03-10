@@ -284,15 +284,16 @@ async function startSSEGeneration(id, mediaKey, mediaLabel) {
   document.getElementById('modal-footer').style.display = 'none';
   document.getElementById('modal-body').innerHTML = renderStepsHTML(1);
 
-  // 원문 URL을 직접 전달 (Cloud Run에는 data.json 없음)
-  const item = DATA && DATA.items.find(i => i.id === id);
-  const url  = item ? item.link : '';
+  // 원문 URL·제목을 직접 전달 (Cloud Run에는 data.json 없음)
+  const item  = DATA && DATA.items.find(i => i.id === id);
+  const url   = item ? item.link  : '';
+  const title = item ? item.title : '';
 
   try {
     const resp = await fetch(`${API_BASE}/generate`, {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify({ id, media: mediaKey, url }),
+      body:    JSON.stringify({ id, media: mediaKey, url, title }),
       signal:  _abortCtrl.signal,
     });
 
@@ -341,7 +342,7 @@ function handleSSEEvent(evt) {
       if (next) { next.classList.remove('done'); next.classList.add('active'); }
     }
     if (detail) {
-      if (evt.chars)       detail.textContent = `${evt.chars.toLocaleString()}자`;
+      if (evt.chars !== undefined) detail.textContent = evt.fallback ? '원문 수집 실패 → fallback' : `${evt.chars.toLocaleString()}자`;
       if (evt.subject)     detail.textContent = evt.subject;
       if (evt.confidence !== undefined) detail.textContent = `신뢰도 ${evt.confidence}%`;
     }
