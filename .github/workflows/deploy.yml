@@ -2,7 +2,9 @@ name: Daily News Crawl & Deploy
 
 on:
   schedule:
-    - cron: '0 22 * * *'   # 매일 UTC 22:00 (KST 07:00)
+    - cron: '20 0 * * *'   # 매일 UTC 00:20 (KST 09:20)
+    - cron: '0  5 * * *'   # 매일 UTC 05:00 (KST 14:00)
+    - cron: '0  8 * * *'   # 매일 UTC 08:00 (KST 17:00)
   workflow_dispatch:
   push:
     branches:
