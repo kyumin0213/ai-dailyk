@@ -1,4 +1,6 @@
 requests
 beautifulsoup4
-google-generativeai
 lxml
+anthropic
+fastapi
+uvicorn[standard]
