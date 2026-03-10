@@ -218,6 +218,189 @@ function typeBadge(t) {
   return `<span class="badge badge-type">${labels[t] || t || ''}</span>`;
 }
 
+// ── 기사 모달 (FastAPI SSE 연동) ───────────────────────────────
+const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+  ? 'http://localhost:8000'
+  : 'https://ai-dailyk-api-vm46iqj3ja-du.a.run.app';
+
+const STEPS = [
+  { key: 1, label: 'STEP1  원문 수집',   model: ''        },
+  { key: 2, label: 'STEP2  구조 분석',   model: 'GPT-4o'  },
+  { key: 3, label: 'STEP3  팩트 검증',   model: 'Gemini'  },
+  { key: 4, label: 'STEP4  기사 작성',   model: 'Claude'  },
+  { key: 5, label: 'STEP5  최종 검수',   model: 'GPT-4o'  },
+];
+
+let _abortCtrl    = null;
+let _currentText  = '';
+let _regenerateFn = null;
+
+function openArticle(id, media) {
+  const item       = DATA && DATA.items.find(i => i.id === id);
+  const mediaLabel = media === 'enet' ? '이넷뉴스' : '한국시니어신문';
+  const mediaKey   = media === 'enet' ? 'enet' : 'senior';
+
+  // 모달 헤더 설정
+  document.getElementById('modal-title').textContent =
+    item ? item.title.slice(0, 40) + (item.title.length > 40 ? '…' : '') : '기사';
+  const lbl = document.getElementById('modal-label');
+  lbl.textContent = mediaLabel;
+  lbl.className   = `modal-label ${media}`;
+  document.getElementById('modal-footer').style.display = 'none';
+  document.getElementById('modal-body').innerHTML =
+    '<div style="color:var(--mu);font-size:12px;padding:8px 0">확인 중...</div>';
+  _currentText  = '';
+  _regenerateFn = null;
+  document.getElementById('modal').classList.add('open');
+
+  // 기존 기사 조회 → 있으면 표시(재생성 버튼 포함), 없으면 생성 시작
+  fetch(`${API_BASE}/article/${id}/${mediaKey}`)
+    .then(r => { if (!r.ok) throw new Error('not_found'); return r.json(); })
+    .then(d => {
+      _regenerateFn = () => startSSEGeneration(id, mediaKey, mediaLabel);
+      showArticle(d.content);
+    })
+    .catch(() => startSSEGeneration(id, mediaKey, mediaLabel));
+}
+
+function renderStepsHTML(activeStep) {
+  return `<div class="modal-steps">${STEPS.map(s => {
+    const st = s.key < activeStep ? 'done' : s.key === activeStep ? 'active' : '';
+    return `<div class="step-row ${st}" id="step-${s.key}">
+      <div class="step-dot"></div>
+      <span>${s.label}${s.model
+        ? ` <span style="color:var(--mu);font-size:10px">(${s.model})</span>` : ''
+      }</span>
+      <span class="step-detail" id="step-${s.key}-detail"></span>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+async function startSSEGeneration(id, mediaKey, mediaLabel) {
+  if (_abortCtrl) _abortCtrl.abort();
+  _abortCtrl    = new AbortController();
+  _regenerateFn = null;
+
+  document.getElementById('modal-footer').style.display = 'none';
+  document.getElementById('modal-body').innerHTML = renderStepsHTML(1);
+
+  // 원문 URL을 직접 전달 (Cloud Run에는 data.json 없음)
+  const item = DATA && DATA.items.find(i => i.id === id);
+  const url  = item ? item.link : '';
+
+  try {
+    const resp = await fetch(`${API_BASE}/generate`, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ id, media: mediaKey, url }),
+      signal:  _abortCtrl.signal,
+    });
+
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      showModalError(err.detail || `서버 오류 (${resp.status})`);
+      return;
+    }
+
+    const reader  = resp.body.getReader();
+    const decoder = new TextDecoder();
+    let   buffer  = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop();
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        try { handleSSEEvent(JSON.parse(line.slice(6))); } catch {}
+      }
+    }
+  } catch (e) {
+    if (e.name !== 'AbortError') {
+      showModalError(
+        'api.py 서버에 연결할 수 없습니다.\n\n' +
+        '터미널에서 먼저 실행하세요:\n' +
+        'uvicorn api:app --port 8000'
+      );
+    }
+  }
+}
+
+function handleSSEEvent(evt) {
+  if (evt.step) {
+    const el     = document.getElementById(`step-${evt.step}`);
+    const detail = document.getElementById(`step-${evt.step}-detail`);
+    if (!el) return;
+    el.classList.remove('active', 'done');
+    if (evt.status === 'running') el.classList.add('active');
+    if (evt.status === 'done') {
+      el.classList.add('done');
+      const next = document.getElementById(`step-${evt.step + 1}`);
+      if (next) { next.classList.remove('done'); next.classList.add('active'); }
+    }
+    if (detail) {
+      if (evt.chars)       detail.textContent = `${evt.chars.toLocaleString()}자`;
+      if (evt.subject)     detail.textContent = evt.subject;
+      if (evt.confidence !== undefined) detail.textContent = `신뢰도 ${evt.confidence}%`;
+    }
+  } else if (evt.type === 'article') {
+    showArticle(evt.content);
+  } else if (evt.type === 'error') {
+    showModalError(evt.message);
+  }
+}
+
+function showArticle(text) {
+  _currentText = text;
+  document.getElementById('modal-body').innerHTML =
+    `<div class="modal-article">${md2html(text)}</div>`;
+  const footer = document.getElementById('modal-footer');
+  footer.style.display = 'flex';
+  footer.innerHTML =
+    (_regenerateFn ? '<button class="btn-regen" onclick="_regenerateFn()">↺ 재생성</button>' : '') +
+    '<button class="btn-copy" onclick="copyArticle()">전문 복사</button>' +
+    '<button class="modal-close" style="width:auto;padding:0 14px;font-size:11px;font-weight:700" onclick="closeModal()">닫기</button>';
+}
+
+function showModalError(msg) {
+  document.getElementById('modal-body').innerHTML =
+    `<div style="color:var(--ac);font-size:12px;line-height:1.7;white-space:pre-wrap">${msg}</div>`;
+}
+
+function copyArticle() {
+  if (!_currentText) return;
+  navigator.clipboard.writeText(_currentText).then(() => {
+    const btn = document.querySelector('#modal-footer .btn-copy');
+    const orig = btn.textContent;
+    btn.textContent = '복사됨 ✓';
+    setTimeout(() => { btn.textContent = orig; }, 1500);
+  });
+}
+
+function closeModal() {
+  if (_abortCtrl) { _abortCtrl.abort(); _abortCtrl = null; }
+  _regenerateFn = null;
+  document.getElementById('modal').classList.remove('open');
+}
+
+function handleModalClick(e) {
+  if (e.target === document.getElementById('modal')) closeModal();
+}
+
+// Markdown → HTML (기본)
+function md2html(text) {
+  return text
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.+)$/gm,  '<h2>$1</h2>')
+    .replace(/^# (.+)$/gm,   '<h1>$1</h1>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n{2,}/g, '</p><p>')
+    .replace(/^/, '<p>').replace(/$/, '</p>');
+}
+
 function renderCardHTML(item) {
   const cands = LS.candidates();
   const excl  = LS.excluded();
@@ -261,6 +444,11 @@ function renderCardHTML(item) {
     <button class="btn btn-excl" onclick="toggleExclude('${item.id}')">
       ${isExcluded ? '↩ 복원' : '제외'}
     </button>
+  </div>
+  <div class="card-write">
+    <button class="btn btn-src" onclick="window.open('${item.link}','_blank')">원문 확인</button>
+    <button class="btn btn-write-e" onclick="openArticle('${item.id}','enet')">이넷뉴스 생성</button>
+    <button class="btn btn-write-s" onclick="openArticle('${item.id}','senior')">시니어신문 생성</button>
   </div>
 </div>`;
 }

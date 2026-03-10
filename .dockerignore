@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+*.pyo
+.git
+.server.pid
+logs/
+articles/
+data.json
+*.md
+.env
