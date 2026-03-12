@@ -92,6 +92,7 @@ jobs:
             echo "✅ No changes in data.json — skipping commit (빈 커밋 방지)"
           else
             git commit -m "chore: update news data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git pull --rebase origin main
             git push
           fi
 
