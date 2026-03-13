@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -81,20 +81,32 @@ jobs:
             echo "⚠️ All 3 attempts failed — keeping existing data.json"
           fi
 
-      # ── 커밋 & 푸시 (변경 있을 때만) ──
-      - name: Commit updated data.json
+      # ── 커밋 & 푸시 (변경 있을 때만, 충돌 시 재시도) ──
+      - name: Commit & push data.json
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 최신 remote 먼저 동기화
+          git pull --rebase origin main
+
           git add data.json
           if git diff --cached --quiet; then
-            echo "✅ No changes in data.json — skipping commit (빈 커밋 방지)"
-          else
-            git commit -m "chore: update news data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git pull --rebase origin main
-            git push
+            echo "✅ No changes in data.json — skipping commit"
+            exit 0
           fi
+
+          git commit -m "chore: update news data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+          # 푸시 (충돌 시 최대 3회 재시도, data.json은 항상 로컬 버전 유지)
+          for i in 1 2 3; do
+            git push origin main && exit 0
+            echo "⏳ Push 재시도 ($i/3)..."
+            git pull --rebase -X theirs origin main
+            sleep 3
+          done
+          echo "❌ Push 3회 실패" && exit 1
 
       # ── Cloudflare Pages 배포 ──
       - name: Deploy to Cloudflare Pages

@@ -170,7 +170,7 @@ def resolve_url(href, base):
     return urljoin(base, href)
 
 def tokenize(text):
-    text = re.sub(r'[^\가-힣a-zA-Z0-9]', ' ', text)
+    text = re.sub(r'[^가-힣a-zA-Z0-9]', ' ', text)
     return set(w for w in text.split() if len(w) > 1)
 
 # ──────────────────────────────────────────────────────────────
