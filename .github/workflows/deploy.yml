@@ -81,30 +81,39 @@ jobs:
             echo "⚠️ All 3 attempts failed — keeping existing data.json"
           fi
 
-      # ── 커밋 & 푸시 (변경 있을 때만, 충돌 방지) ──
+      # ── 커밋 & 푸시 (충돌 완전 방지: fetch→reset→commit→force-with-lease) ──
       - name: Commit & push data.json
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # data.json은 매번 완전히 새로 생성되므로,
-          # 로컬 파일을 백업 → remote 최신으로 리셋 → 복원 후 커밋
           cp data.json /tmp/data.json.bak
 
-          git fetch origin main
-          git reset --hard origin/main
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
 
-          cp /tmp/data.json.bak data.json
+            cp /tmp/data.json.bak data.json
+            git add data.json
 
-          git add data.json
-          if git diff --cached --quiet; then
-            echo "✅ No changes in data.json — skipping commit"
-            exit 0
-          fi
+            if git diff --cached --quiet; then
+              echo "✅ No changes in data.json — skipping commit"
+              exit 0
+            fi
 
-          git commit -m "chore: update news data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push origin main
+            git commit -m "chore: update news data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+            if git push --force-with-lease origin main; then
+              echo "✅ Push 성공"
+              exit 0
+            fi
+
+            echo "⏳ Push 실패 — 재시도 ($attempt/3)..."
+            sleep 5
+          done
+
+          echo "❌ Push 3회 실패" && exit 1
 
       # ── Cloudflare Pages 배포 ──
       - name: Deploy to Cloudflare Pages
