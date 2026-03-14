@@ -1,11 +1,11 @@
 {
   "meta": {
-    "updated_at": "2026-03-14T14:39:32.937926+09:00",
+    "updated_at": "2026-03-14T17:28:15.266792+09:00",
     "today": "2026년 03월 14일",
     "total": 17,
-    "a_count": 9,
+    "a_count": 11,
     "b_count": 1,
-    "c_count": 7,
+    "c_count": 5,
     "enetnews_count": 8,
     "senior_count": 1,
     "cluster_count": 0,
@@ -23,19 +23,38 @@
   },
   "items": [
     {
+      "id": "70962542d927",
+      "title": "DB손해보험-DB생명-KISA '2024년 블록체인 기반 인슈어테크 기업 공동육성 프로그램' 참가 스타트업 모집",
+      "link": "https://www.idbins.com/pc/bizxpress/cmy/pr/news/FWCOMV1683_337.shtm?tp=T&tx=&ct=100",
+      "source": "DB손해보험",
+      "source_type": "company",
+      "source_cat": "기업",
+      "collected_at": "2026-03-14T17:28+09:00",
+      "duplicate_cluster": null,
+      "duplicate_suspected": false,
+      "grade": "A",
+      "category": "경제·금융",
+      "reason": "DB손보-DB생명, 블록체인 인슈어테크 스타트업 공동육성 프로그램 추진 발표",
+      "summary": "DB손해보험과 DB생명, KISA가 2024년 블록체인 기반 인슈어테크 기업 공동육성 프로그램에 참여할 스타트업을 모집한다. 인슈어테크 산업 활성화 및 혁신 스타트업 발굴을 목표로 한다.",
+      "enetnews": true,
+      "senior": false,
+      "article_type": "report",
+      "recommended_for": "enetnews"
+    },
+    {
       "id": "0bbaf9840af2",
       "title": "56시간 저온숙성 숙 탕종 숙 (熟)식빵",
       "link": "https://spcsamlip.co.kr/brand/56-hours-aging-bread/",
       "source": "SPC삼립",
       "source_type": "company",
       "source_cat": "기업",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
-      "grade": "C",
+      "grade": "A",
       "category": "생활·소비",
-      "reason": "SPC삼립의 신제품 식빵 출시, 소비자 구매 유도 목적의 단순 제품 홍보",
-      "summary": "SPC삼립이 56시간 저온숙성 숙 탕종 식빵을 출시하며 베이커리 시장에 새로운 맛과 식감을 선보인다. 장시간 저온 숙성 공법으로 빵의 풍미를 극대화했다.",
+      "reason": "SPC삼립, 56시간 저온숙성 기술 적용 '숙 탕종 숙 식빵' 출시로 프리미엄 베이커리 시장 공략",
+      "summary": "SPC삼립이 56시간 저온숙성 탕종 기법을 적용한 '숙 탕종 숙(熟)식빵'을 선보였다. 고급화된 제빵 기술로 소비자들에게 차별화된 맛과 식감을 제공할 예정이다.",
       "enetnews": false,
       "senior": false,
       "article_type": "report",
@@ -48,13 +67,13 @@
       "source": "SPC삼립",
       "source_type": "company",
       "source_cat": "기업",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "C",
       "category": "생활·소비",
-      "reason": "'피그인더가든' 브랜드 제주 콘셉트 샐러드 출시, 신제품 홍보",
-      "summary": "SPC삼립의 샐러드 브랜드 피그인더가든이 제주 특산물을 활용한 샐러드 2종을 새롭게 선보인다. 신선한 재료로 건강한 한 끼 식사를 제공한다.",
+      "reason": "SPC삼립 피그인더가든, 제주 특산물 활용 샐러드 신제품 2종 출시",
+      "summary": "SPC삼립의 샐러드 브랜드 피그인더가든이 제주 특산물을 활용한 샐러드 신제품 2종을 출시했다. 신선한 재료로 건강하고 간편한 한 끼를 제공한다.",
       "enetnews": false,
       "senior": false,
       "article_type": "report",
@@ -67,13 +86,13 @@
       "source": "SPC삼립",
       "source_type": "company",
       "source_cat": "기업",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "C",
       "category": "생활·소비",
-      "reason": "두바이 콘셉트 파이 및 케이크 출시, 이색적인 신제품 라인업 확장",
-      "summary": "SPC삼립이 중동의 맛을 담은 두바이 스타일 파이와 케이크 신제품을 출시한다. 이색적인 디저트로 소비자들에게 새로운 미식 경험을 제공할 예정이다.",
+      "reason": "SPC삼립, 두바이 콘셉트 파이 및 케이크 신제품 출시로 이색 디저트 시장 공략",
+      "summary": "SPC삼립이 두바이 스타일의 파이와 케이크 신제품을 선보인다. 중동의 이국적인 맛과 비주얼을 콘셉트로 새로운 디저트 경험을 제공할 예정이다.",
       "enetnews": false,
       "senior": false,
       "article_type": "report",
@@ -86,13 +105,13 @@
       "source": "SPC삼립",
       "source_type": "company",
       "source_cat": "기업",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "C",
       "category": "생활·소비",
-      "reason": "명절 시즌 맞이 전통 디저트 선물세트 출시, 판매 촉진 목적",
-      "summary": "SPC삼립이 다가오는 설 명절을 맞아 만쥬와 약과 등 전통 디저트로 구성된 선물세트를 선보인다. 소중한 사람들에게 마음을 전할 수 있는 제품이다.",
+      "reason": "SPC삼립, 전통 디저트 만쥬와 약과로 구성된 설 선물세트 출시",
+      "summary": "SPC삼립이 만쥬와 약과 등 전통 디저트를 담은 설 선물세트를 출시했다. 고품격 구성으로 명절 분위기를 더하며, 실속 있는 선물로 인기를 끌 것으로 보인다.",
       "enetnews": false,
       "senior": false,
       "article_type": "report",
@@ -105,36 +124,17 @@
       "source": "SPC삼립",
       "source_type": "company",
       "source_cat": "기업",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
-      "grade": "C",
+      "grade": "A",
       "category": "생활·소비",
-      "reason": "겨울 제철 설향딸기 활용 디저트 출시, 시즌 한정 판매 홍보",
-      "summary": "삼립이 겨울 제철 설향딸기를 활용한 새콤달콤한 디저트 신제품을 출시한다. 신선한 딸기의 맛과 향으로 겨울철 소비자 입맛을 사로잡을 계획이다.",
+      "reason": "SPC삼립, 겨울 시즌 겨냥한 설향딸기 디저트 신제품 5종 출시로 겨울 시장 공략 강화",
+      "summary": "SPC삼립이 겨울 제철 과일 설향딸기를 활용한 디저트 신제품 5종을 선보였다. 상큼하고 달콤한 딸기 맛으로 겨울철 소비자들의 입맛을 사로잡고 시장 점유율을 높일 계획이다.",
       "enetnews": false,
       "senior": false,
       "article_type": "report",
       "recommended_for": "none"
-    },
-    {
-      "id": "70962542d927",
-      "title": "DB손해보험-DB생명-KISA '2024년 블록체인 기반 인슈어테크 기업 공동육성 프로그램' 참가 스타트업 모집",
-      "link": "https://www.idbins.com/pc/bizxpress/cmy/pr/news/FWCOMV1683_337.shtm?tp=T&tx=&ct=100",
-      "source": "DB손해보험",
-      "source_type": "company",
-      "source_cat": "기업",
-      "collected_at": "2026-03-14T14:39+09:00",
-      "duplicate_cluster": null,
-      "duplicate_suspected": false,
-      "grade": "A",
-      "category": "경제·금융",
-      "reason": "블록체인 기반 인슈어테크 스타트업 육성 프로그램 개시, 미래 성장 동력 확보 및 산업 생태계 확장 기여",
-      "summary": "DB손보, DB생명, KISA가 2024년 블록체인 기반 인슈어테크 기업 공동육성 프로그램 참가 스타트업을 모집한다. 혁신 기술 발굴 및 성장을 지원하며 미래 시장을 선도할 계획이다.",
-      "enetnews": true,
-      "senior": false,
-      "article_type": "report",
-      "recommended_for": "enetnews"
     },
     {
       "id": "a37dc3746fe1",
@@ -143,13 +143,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-14T09:00:00+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "A",
       "category": "IT·과학",
-      "reason": "삼성전자 마이크로 RGB TV가 눈 안전성 및 생체 리듬 인증 획득, 제품 경쟁력 강화 및 주요 기술 발표",
+      "reason": "삼성전자 마이크로 RGB TV, 눈 안전성·생체 리듬 국제 인증 동시 획득으로 프리미엄 시장 공략 강화",
       "summary": "삼성전자 마이크로 RGB TV(R95H)가 독일의 시험·인증 기관 VDE(Verband Deutscher Elektrotechniker)로부터 ‘눈 안전성(Safety for Eyes)’과 ‘생체 리듬 디스플레이(C",
       "enetnews": true,
       "senior": true,
@@ -163,17 +163,17 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-14T09:00:00+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "C",
       "category": "기타",
-      "reason": "플루티스트 박태환의 개인 디지털 싱글 앨범 발매 소식, 단순 활동 홍보",
+      "reason": "플루티스트 박태환, 18번째 디지털 싱글 앨범 발매로 음악적 스펙트럼 확장",
       "summary": "플루티스트 박태환이 18번째 디지털 싱글 앨범 ‘ANIMATION - 일본 애니메이션 속의 감성’을 발매했다. 화이트데이를 맞아 사랑, 설렘, 그리고 기억의 순간을 플루트 선율로 전하는 스페셜 프로젝트다. 이 앨범은",
       "enetnews": false,
       "senior": false,
-      "article_type": "brief",
+      "article_type": "report",
       "recommended_for": "none"
     },
     {
@@ -183,13 +183,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T17:09:24+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "A",
       "category": "국제",
-      "reason": "가나 대통령 방한 중 기후위기 해결 위한 '에코C큐브' 협력 논의, 국제적 환경 문제 해결에 기여",
+      "reason": "가나 대통령, 한국 방문 중 플라스틱·기후위기 해결 위한 국제 협력 강조 및 합의",
       "summary": "존 드라마니 마하마(John Dramani Mahama) 가나 대통령이 이재명 대통령과의 정상회담 다음 날인 13일 서울 신라호텔을 방문해 한국의 친환경 기술 ‘에코C큐브’에 대한 설명회에 참석하고, 가나의 플라스틱",
       "enetnews": true,
       "senior": false,
@@ -203,13 +203,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T17:05:00+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "A",
       "category": "IT·과학",
-      "reason": "일본 기업 최초 글로벌 AI 펠로우십 선정, 로봇 및 AI 기술력 인정 및 미래 성장 잠재력 증명",
+      "reason": "텔레이그지스턴스, AWS·엔비디아 주도 피지컬 AI 펠로우십에 일본 기업 최초 선정, 기술력 인정",
       "summary": "텔레이그지스턴스(Telexistence, 이하 TX)가 피지컬 AI 펠로우십(Physical AI Fellowship)의 두 번째 코호트(기수)로 선정되었다고 발표했다. 피지컬 AI 펠로우십은 아마존 웹 서비스 스타",
       "enetnews": true,
       "senior": false,
@@ -223,13 +223,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T17:00:00+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "C",
       "category": "기타",
-      "reason": "일본 아와지섬에 인기 다크 판타지 테마의 공간 개장 임박, 관광객 유치 목적",
+      "reason": "일본 효고현 아와지섬에 인기 다크 판타지 테마의 새로운 관광 체험 시설 오픈 임박",
       "summary": "니지겐노모리(본사 일본 효고현 아와지시, 대표이사 사장 사다마츠 히로시게)가 일본 효고현립 아와지섬 공원 애니메이션 파크 ‘니지겐노모리’에서 TV 애니메이션 ‘진격의 거인’의 세계를 체험할 수 있는 컬래버 이벤트를 ",
       "enetnews": false,
       "senior": false,
@@ -243,17 +243,17 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T16:59:03+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "A",
       "category": "생활·소비",
-      "reason": "신전떡볶이 신메뉴 '맵닭'이 단기간 내 높은 판매량 기록, 시장 반응 및 성공적인 신제품 전략 입증",
+      "reason": "신전떡볶이 신메뉴 '맵닭', 출시 후 67만 개 판매 돌파로 시장 성공 입증",
       "summary": "신전푸드시스가 운영하는 분식 프랜차이즈 신전떡볶이의 신메뉴 ‘맵닭’이 13일 기준 누적 판매량 67만 개를 돌파했다. 맵닭은 매콤한 양념을 입힌 닭고기를 활용한 메뉴로, 신전떡볶이 특유의 매운 소스와 닭고기의 풍미를",
       "enetnews": false,
       "senior": false,
-      "article_type": "brief",
+      "article_type": "report",
       "recommended_for": "none"
     },
     {
@@ -263,13 +263,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T16:40:00+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "A",
       "category": "산업·기업",
-      "reason": "새로운 기능성 광섬유 '쿨맥스 클로크FX™'의 글로벌 데뷔, 섬유 산업 기술 혁신 및 시장 확대 기대",
+      "reason": "쿨맥스 클로크FX™ 광섬유, 뮌헨 퍼포먼스 데이즈서 공식 글로벌 론칭, 섬유 시장 혁신 예고",
       "summary": "라이크라 컴퍼니(LYCRA Company) 가 3월 18일부터 19일까지 열리는 유럽 최고의 기능성 직물 박람회인 뮌헨 퍼포먼스 데이즈(Performance Days Munich)에서 쿨맥스 클로크™(COOLMAX ",
       "enetnews": true,
       "senior": false,
@@ -283,13 +283,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T16:30:00+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "A",
-      "category": "산업·기업",
-      "reason": "'레드슬림'의 아시아 태평양 지역 확장 발표, 글로벌 데이터 및 AI 인프라 시장에서의 영향력 확대",
+      "category": "IT·과학",
+      "reason": "레드슬림, 아시아 태평양 시장으로 사업 확장, 글로벌 브랜드 대상 AI 데이터 인프라 서비스 제공",
       "summary": "종단간 데이터 관리 솔루션 전문업체이자 아스토르그(Astorg) 포트폴리오 회사인 레드슬림(Redslim)이 오늘 아시아 태평양 지역으로의 확장과 키리아코스 잔니코스 (Kyriakos Zannikos)를 APAC 지",
       "enetnews": true,
       "senior": false,
@@ -303,13 +303,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T16:30:00+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "A",
       "category": "정부·공공",
-      "reason": "대흥정보의 수원 공영주차 통합이용권 시스템 구축 참여, 스마트시티 인프라 개선 및 시민 편의 증진 기여",
+      "reason": "대흥정보, 수원시 공영주차 통합이용권 시스템 구축 사업 참여, 스마트 교통 인프라 기여",
       "summary": "공공 IT 시스템 구축 기업 대흥정보가 공영주차장 통합이용권 서비스인 ‘새빛주차패스’ 구축 사업에 참여하며 스마트 공공 주차 서비스 구현 사례를 확보했다. ‘새빛주차패스’는 수원 지역 노외 공영주차장 47개소를 하나",
       "enetnews": true,
       "senior": false,
@@ -323,13 +323,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T16:23:05+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "B",
       "category": "기타",
-      "reason": "포항고 학술동아리 '라솔라'의 역사적 가치와 공로 인정, 오랜 전통과 학생 활동의 중요성 부각",
+      "reason": "포항고 학술동아리 '라솔라', 71년 역사 인정받아 대한민국 최고 기록 인증 획득",
       "summary": "1955년 한국전쟁 직후 창립된 고등학교 학생 동아리가 70년이 넘는 시간을 이어오며 대한민국 교육사 속 상징적인 기록으로 인정받았다. 포항고등학교 학술동아리 ‘라솔라(La Solar)’가 대한민국에서 가장 오래된 ",
       "enetnews": false,
       "senior": false,
@@ -343,13 +343,13 @@
       "source": "뉴스와이어",
       "source_type": "rss",
       "source_cat": "RSS",
-      "collected_at": "2026-03-14T14:39+09:00",
+      "collected_at": "2026-03-14T17:28+09:00",
       "published_at": "2026-03-13T16:00:00+09:00",
       "duplicate_cluster": null,
       "duplicate_suspected": false,
       "grade": "A",
-      "category": "경제·금융",
-      "reason": "EIG 미드오션 에너지의 고르곤 LNG 추가 지분 인수, 에너지 시장 투자 확대 및 전략적 협력 강화",
+      "category": "산업·기업",
+      "reason": "EIG 미드오션 에너지, 제라로부터 고르곤 LNG 추가 지분 인수, 에너지 시장 내 전략적 협력 강화",
       "summary": "EIG가 설립하고 관리하는 액화천연가스(LNG) 회사인 미드오션 에너지(MidOcean Energy)(‘미드오션’)가 오늘 제라(JERA Co., Inc.)(‘제라’)와 최종 계약을 체결하여 고르곤 LNG(Gorgo",
       "enetnews": true,
       "senior": false,
@@ -371,14 +371,14 @@
       "error_type": "no_url"
     },
     {
-      "name": "한국남부발전",
-      "url": "https://www.kospo.co.kr/kospo/216/subview.do",
+      "name": "보건복지부",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027",
       "type": "gov",
-      "cat": "공기업",
+      "cat": "정부부처",
       "count": 0,
       "detected": 0,
       "success": false,
-      "error": "HTTPSConnectionPool(host='www.kospo.co.kr', port=443): Max r",
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connectio",
       "error_type": "blocked"
     },
     {
@@ -404,17 +404,6 @@
       "error_type": "blocked"
     },
     {
-      "name": "국민체육진흥공단",
-      "url": "https://www.kspo.or.kr/kspo/frt/bbs/type01/commonSelectBoardList.do?bbsId=BBSMSTR_000000000021",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
       "name": "해양수산부",
       "url": "https://www.mof.go.kr/doc/ko/selectDocList.do?menuSeq=971&bbsSeq=10",
       "type": "gov",
@@ -426,19 +415,41 @@
       "error_type": "blocked"
     },
     {
-      "name": "보건복지부",
-      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027",
+      "name": "한국남부발전",
+      "url": "https://www.kospo.co.kr/kospo/216/subview.do",
       "type": "gov",
-      "cat": "정부부처",
+      "cat": "공기업",
       "count": 0,
       "detected": 0,
       "success": false,
-      "error": "('Connection aborted.', ConnectionResetError(104, 'Connectio",
+      "error": "HTTPSConnectionPool(host='www.kospo.co.kr', port=443): Max r",
       "error_type": "blocked"
+    },
+    {
+      "name": "국민체육진흥공단",
+      "url": "https://www.kspo.or.kr/kspo/frt/bbs/type01/commonSelectBoardList.do?bbsId=BBSMSTR_000000000021",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
     },
     {
       "name": "한국마사회",
       "url": "https://www.kra.co.kr/board/pr/skr0221.do",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "근로복지공단",
+      "url": "https://www.comwel.or.kr/comwel/noti/pres.jsp",
       "type": "gov",
       "cat": "공기업",
       "count": 0,
@@ -481,17 +492,6 @@
       "error_type": "no_articles"
     },
     {
-      "name": "교육부",
-      "url": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294&m=0204&s=moe",
-      "type": "gov",
-      "cat": "정부부처",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
       "name": "한국수력원자력",
       "url": "https://www.khnp.co.kr/main/selectBbsNttList.do?bbsNo=71&key=2289",
       "type": "gov",
@@ -503,10 +503,43 @@
       "error_type": "no_articles"
     },
     {
+      "name": "교육부",
+      "url": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294&m=0204&s=moe",
+      "type": "gov",
+      "cat": "정부부처",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
       "name": "성평등가족부",
       "url": "https://www.mogef.go.kr/nw/enw/nw_enw_s001.do",
       "type": "gov",
       "cat": "정부부처",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "한국재해예방안전보건공단",
+      "url": "https://kosha.or.kr/notification/release/press-release",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "한국전기안전공사",
+      "url": "https://www.kesco.or.kr/bbs/selectPageListBbs.do?bbs_code=MKB00002",
+      "type": "gov",
+      "cat": "공기업",
       "count": 0,
       "detected": 0,
       "success": true,
@@ -536,8 +569,19 @@
       "error_type": "no_articles"
     },
     {
-      "name": "한국재해예방안전보건공단",
-      "url": "https://kosha.or.kr/notification/release/press-release",
+      "name": "한국석유공사",
+      "url": "https://www.knoc.co.kr/sub11/sub11_1.jsp",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "한국가스안전공사",
+      "url": "https://www.kgs.or.kr/kgs/agc/board.do",
       "type": "gov",
       "cat": "공기업",
       "count": 0,
@@ -558,63 +602,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "한국가스안전공사",
-      "url": "https://www.kgs.or.kr/kgs/agc/board.do",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "한국석유공사",
-      "url": "https://www.knoc.co.kr/sub11/sub11_1.jsp",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "영화진흥위원회",
-      "url": "https://www.kofic.or.kr/kofic/business/noti/findNewsList.do",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "삼성전자",
-      "url": "https://news.samsung.com/kr/category/%ED%94%84%EB%A0%88%EC%8A%A4%EC%84%BC%ED%84%B0/%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
       "name": "한국관광공사",
       "url": "https://knto.or.kr/pressRelease",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "국립공원공단",
-      "url": "https://www.knps.or.kr/front/portal/open/pnewsList.do?pnewsGrpCd=PNE02&menuNo=8000319",
       "type": "gov",
       "cat": "공기업",
       "count": 0,
@@ -635,8 +624,30 @@
       "error_type": "no_articles"
     },
     {
-      "name": "한국전기안전공사",
-      "url": "https://www.kesco.or.kr/bbs/selectPageListBbs.do?bbs_code=MKB00002",
+      "name": "국립공원공단",
+      "url": "https://www.knps.or.kr/front/portal/open/pnewsList.do?pnewsGrpCd=PNE02&menuNo=8000319",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "한국산업인력공단",
+      "url": "https://www.hrdkorea.or.kr/3/1/1",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "한국환경공단",
+      "url": "https://www.keco.or.kr/web/lay1/bbs/S1T109C110/A/19/list.do",
       "type": "gov",
       "cat": "공기업",
       "count": 0,
@@ -657,19 +668,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "LG이노텍",
-      "url": "https://www.lginnotek.com/news/press.do",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "한국산업인력공단",
-      "url": "https://www.hrdkorea.or.kr/3/1/1",
+      "name": "기술보증기금",
+      "url": "https://www.kibo.or.kr/main/board/boardType05.do",
       "type": "gov",
       "cat": "공기업",
       "count": 0,
@@ -690,8 +690,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "한국환경공단",
-      "url": "https://www.keco.or.kr/web/lay1/bbs/S1T109C110/A/19/list.do",
+      "name": "인천국제공항공사",
+      "url": "https://www.airport.kr/co/ko/pr/press/pressList.do",
       "type": "gov",
       "cat": "공기업",
       "count": 0,
@@ -712,19 +712,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "기술보증기금",
-      "url": "https://www.kibo.or.kr/main/board/boardType05.do",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "LG화학",
-      "url": "https://www.lgchem.com/company/information-center/press-release",
+      "name": "LG이노텍",
+      "url": "https://www.lginnotek.com/news/press.do",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -745,61 +734,6 @@
       "error_type": "no_articles"
     },
     {
-      "name": "근로복지공단",
-      "url": "https://www.comwel.or.kr/comwel/noti/pres.jsp",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "LG전자",
-      "url": "https://live.lge.co.kr/news/press-release/",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "LG CNS",
-      "url": "https://www.lgcns.com/kr/newsroom/press.page_1",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "인천국제공항공사",
-      "url": "https://www.airport.kr/co/ko/pr/press/pressList.do",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "SK텔레콤",
-      "url": "https://news.sktelecom.com/category/%ed%94%84%eb%a0%88%ec%8a%a4%ec%84%bc%ed%84%b0/%eb%b3%b4%eb%8f%84%ec%9e%90%eb%a3%8c",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
       "name": "국민건강보험공단",
       "url": "https://www.nhis.or.kr/nhis/together/wbhaea01600m01.do",
       "type": "gov",
@@ -811,41 +745,19 @@
       "error_type": "no_articles"
     },
     {
+      "name": "LG화학",
+      "url": "https://www.lgchem.com/company/information-center/press-release",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
       "name": "현대모비스",
       "url": "https://www.mobis.com/kr/aboutus/press.do",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "HD현대",
-      "url": "https://www.hd.com/kr/newsroom/media-hub/press/list",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "롯데그룹",
-      "url": "https://www.lotte.co.kr/pr/newsList.do",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "SK에코플랜트",
-      "url": "https://news.skecoplant.com/category/sk-ecoplant",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -866,8 +778,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "SK하이닉스",
-      "url": "https://news.skhynix.co.kr/category/press/",
+      "name": "현대자동차",
+      "url": "https://www.hyundaimotorgroup.com/ko/news/newsMain",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -877,8 +789,52 @@
       "error_type": "no_articles"
     },
     {
-      "name": "현대자동차",
-      "url": "https://www.hyundaimotorgroup.com/ko/news/newsMain",
+      "name": "LG CNS",
+      "url": "https://www.lgcns.com/kr/newsroom/press.page_1",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "SK에코플랜트",
+      "url": "https://news.skecoplant.com/category/sk-ecoplant",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "LG전자",
+      "url": "https://live.lge.co.kr/news/press-release/",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "HD현대",
+      "url": "https://www.hd.com/kr/newsroom/media-hub/press/list",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "SK텔레콤",
+      "url": "https://news.sktelecom.com/category/%ed%94%84%eb%a0%88%ec%8a%a4%ec%84%bc%ed%84%b0/%eb%b3%b4%eb%8f%84%ec%9e%90%eb%a3%8c",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -910,6 +866,17 @@
       "error_type": "no_articles"
     },
     {
+      "name": "롯데그룹",
+      "url": "https://www.lotte.co.kr/pr/newsList.do",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
       "name": "HD현대중공업",
       "url": "https://www.hhi.co.kr/kr/media-hub/press-release",
       "type": "company",
@@ -921,8 +888,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "두산에너빌리티",
-      "url": "https://www.doosanenerbility.com/kr/about/news_board_list",
+      "name": "현대건설",
+      "url": "https://www.hdec.kr/kr/company/press_list.aspx",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -932,26 +899,15 @@
       "error_type": "no_articles"
     },
     {
-      "name": "신한금융지주",
-      "url": "https://www.shinhanfs.com",
+      "name": "CJ",
+      "url": "https://cjnews.cj.net/category/press-center/",
       "type": "company",
       "cat": "기업",
       "count": 0,
       "detected": 0,
-      "success": false,
-      "error": "HTTPSConnectionPool(host='www.shinhanfs.com', port=443): Max",
-      "error_type": "blocked"
-    },
-    {
-      "name": "롯데칠성음료",
-      "url": "https://company.lottechilsung.co.kr/kor/company/news/list.do",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": false,
-      "error": "HTTPSConnectionPool(host='company.lottechilsung.co.kr', port",
-      "error_type": "blocked"
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
     },
     {
       "name": "LG",
@@ -965,6 +921,28 @@
       "error_type": "no_articles"
     },
     {
+      "name": "롯데칠성음료",
+      "url": "https://company.lottechilsung.co.kr/kor/company/news/list.do",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": false,
+      "error": "HTTPSConnectionPool(host='company.lottechilsung.co.kr', port",
+      "error_type": "blocked"
+    },
+    {
+      "name": "신한금융지주",
+      "url": "https://www.shinhanfs.com",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": false,
+      "error": "HTTPSConnectionPool(host='www.shinhanfs.com', port=443): Max",
+      "error_type": "blocked"
+    },
+    {
       "name": "포스코",
       "url": "http://newsroom.posco.com/",
       "type": "company",
@@ -976,8 +954,19 @@
       "error_type": "no_articles"
     },
     {
-      "name": "현대건설",
-      "url": "https://www.hdec.kr/kr/company/press_list.aspx",
+      "name": "GS리테일",
+      "url": "http://www.gsretail.com/gsretail/ko/media/news-report",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "두산에너빌리티",
+      "url": "https://www.doosanenerbility.com/kr/about/news_board_list",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1009,6 +998,17 @@
       "error_type": "no_articles"
     },
     {
+      "name": "영화진흥위원회",
+      "url": "https://www.kofic.or.kr/kofic/business/noti/findNewsList.do",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
       "name": "GS건설",
       "url": "https://www.gs.co.kr/ko/news",
       "type": "company",
@@ -1031,17 +1031,6 @@
       "error_type": "no_articles"
     },
     {
-      "name": "롯데건설",
-      "url": "https://www.lottecon.co.kr/medias/notice_list",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
       "name": "신세계그룹",
       "url": "https://www.shinsegaegroupnewsroom.com/category/press-release/",
       "type": "company",
@@ -1053,8 +1042,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "GS리테일",
-      "url": "http://www.gsretail.com/gsretail/ko/media/news-report",
+      "name": "롯데건설",
+      "url": "https://www.lottecon.co.kr/medias/notice_list",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1075,8 +1064,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "KT",
-      "url": "https://corp.kt.com/html/promote/news/report_list.html",
+      "name": "두산그룹",
+      "url": "https://www.doosannewsroom.com/",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1086,8 +1075,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "CJ",
-      "url": "https://cjnews.cj.net/category/press-center/",
+      "name": "KT",
+      "url": "https://corp.kt.com/html/promote/news/report_list.html",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1110,6 +1099,17 @@
     {
       "name": "DL이앤씨",
       "url": "https://www.dlenc.co.kr/pr/InfoList.do",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "우리은행",
+      "url": "https://spot.wooribank.com/pot/Dream?withyou=BPPBC0036",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1163,39 +1163,6 @@
       "error_type": "no_articles"
     },
     {
-      "name": "SPC삼립",
-      "url": "https://spcsamlip.co.kr/press-release/",
-      "type": "company",
-      "cat": "기업",
-      "count": 5,
-      "detected": 13,
-      "success": true,
-      "error": null,
-      "error_type": null
-    },
-    {
-      "name": "우리은행",
-      "url": "https://spot.wooribank.com/pot/Dream?withyou=BPPBC0036",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "LS그룹",
-      "url": "https://www.lsholdings.com/ko/media/news",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
       "name": "DB손해보험",
       "url": "https://www.idbins.com/pc/bizxpress/contentTemplet/cmy/pr/news/list.jsp",
       "type": "company",
@@ -1207,8 +1174,8 @@
       "error_type": null
     },
     {
-      "name": "하림",
-      "url": "https://www.harim.com/main/?menu=52",
+      "name": "LS그룹",
+      "url": "https://www.lsholdings.com/ko/media/news",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1229,30 +1196,19 @@
       "error_type": "no_articles"
     },
     {
+      "name": "하나은행",
+      "url": "https://www.hanabank.com",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
       "name": "NH농협금융",
       "url": "https://www.nhfngroup.com/user/indexSub.do?codyMenuSeq=884083449&siteId=nhfngroup",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "SK",
-      "url": "https://sk.com/ko/media/news.jsp",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "쿠팡",
-      "url": "https://news.coupang.com/archives/category/press/release/",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1273,17 +1229,6 @@
       "error_type": "no_articles"
     },
     {
-      "name": "아모레퍼시픽",
-      "url": "https://www.apgroup.com/int/ko/news/news.html",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
       "name": "보령제약",
       "url": "https://www.boryung.com",
       "type": "company",
@@ -1295,8 +1240,30 @@
       "error_type": "blocked"
     },
     {
+      "name": "하림",
+      "url": "https://www.harim.com/main/?menu=52",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
       "name": "셀트리온",
       "url": "https://www.celltrion.com/ko-kr/company/media-center/press-release",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "SK",
+      "url": "https://sk.com/ko/media/news.jsp",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1317,8 +1284,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "우아한형제들",
-      "url": "https://www.woowahan.com/newsroom/media?page=1",
+      "name": "GC녹십자",
+      "url": "https://www.gccorp.com/kor/pr/news",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1328,8 +1295,41 @@
       "error_type": "no_articles"
     },
     {
-      "name": "하나은행",
-      "url": "https://www.hanabank.com",
+      "name": "쿠팡",
+      "url": "https://news.coupang.com/archives/category/press/release/",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "SK하이닉스",
+      "url": "https://news.skhynix.co.kr/category/press/",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "한미약품",
+      "url": "https://www.hanmipharm.com",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "우아한형제들",
+      "url": "https://www.woowahan.com/newsroom/media?page=1",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1350,52 +1350,8 @@
       "error_type": "blocked"
     },
     {
-      "name": "한미약품",
-      "url": "https://www.hanmipharm.com",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "GM코리아",
-      "url": "https://news.gm-korea.co.kr/ko/home/newsroom.html",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
       "name": "코웨이",
       "url": "https://company.coway.com/newsroom/press",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "미래에셋증권",
-      "url": "https://www.miraeasset.com",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "GC녹십자",
-      "url": "https://www.gccorp.com/kor/pr/news",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1416,6 +1372,17 @@
       "error_type": "no_articles"
     },
     {
+      "name": "SPC삼립",
+      "url": "https://spcsamlip.co.kr/press-release/",
+      "type": "company",
+      "cat": "기업",
+      "count": 5,
+      "detected": 13,
+      "success": true,
+      "error": null,
+      "error_type": null
+    },
+    {
       "name": "빙그레",
       "url": "https://www.binggrae.co.kr",
       "type": "company",
@@ -1427,15 +1394,26 @@
       "error_type": "blocked"
     },
     {
-      "name": "초록우산어린이재단",
-      "url": "https://www.greenumbrella.or.kr",
+      "name": "아모레퍼시픽",
+      "url": "https://www.apgroup.com/int/ko/news/news.html",
       "type": "company",
       "cat": "기업",
       "count": 0,
       "detected": 0,
-      "success": false,
-      "error": "HTTPSConnectionPool(host='www.greenumbrella.or.kr', port=443",
-      "error_type": "blocked"
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "미래에셋증권",
+      "url": "https://www.miraeasset.com",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
     },
     {
       "name": "종근당",
@@ -1449,8 +1427,8 @@
       "error_type": "no_articles"
     },
     {
-      "name": "KGC한국인삼공사",
-      "url": "https://www.kgc.co.kr/media-center/kgc-notice/list.do",
+      "name": "GM코리아",
+      "url": "https://news.gm-korea.co.kr/ko/home/newsroom.html",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1460,30 +1438,30 @@
       "error_type": "no_articles"
     },
     {
-      "name": "넥슨",
-      "url": "https://kr-newsroom.nexon.com/",
+      "name": "초록우산어린이재단",
+      "url": "https://www.greenumbrella.or.kr",
       "type": "company",
       "cat": "기업",
       "count": 0,
       "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "코오롱인더스트리",
-      "url": "https://www.kolonindustries.com/kr/promote/news",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
+      "success": false,
+      "error": "HTTPSConnectionPool(host='www.greenumbrella.or.kr', port=443",
+      "error_type": "blocked"
     },
     {
       "name": "넥센타이어",
       "url": "https://www.nexentire.com",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "이마트",
+      "url": "https://www.emart.com",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1504,52 +1482,19 @@
       "error_type": "no_articles"
     },
     {
-      "name": "한국지역난방공사",
-      "url": "https://www.kdhc.co.kr/kdhc/bbs/B0000038/list.do?menuNo=200125",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
-      "success": false,
-      "error": "HTTPSConnectionPool(host='www.kdhc.co.kr', port=443): Max re",
-      "error_type": "timeout"
-    },
-    {
-      "name": "이마트",
-      "url": "https://www.emart.com",
+      "name": "광동제약",
+      "url": "https://www.kdpharm.com",
       "type": "company",
       "cat": "기업",
       "count": 0,
       "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "한국도로공사",
-      "url": "https://www.ex.co.kr/site/com/pageProcess.do",
-      "type": "gov",
-      "cat": "공기업",
-      "count": 0,
-      "detected": 0,
       "success": false,
-      "error": "HTTPSConnectionPool(host='www.ex.co.kr', port=443): Max retr",
-      "error_type": "timeout"
+      "error": "HTTPSConnectionPool(host='www.kdpharm.com', port=443): Max r",
+      "error_type": "blocked"
     },
     {
-      "name": "뉴스와이어",
-      "url": "https://api.newswire.co.kr/rss/all",
-      "type": "rss",
-      "cat": "RSS",
-      "count": 11,
-      "detected": 11,
-      "success": true,
-      "error": null,
-      "error_type": null
-    },
-    {
-      "name": "JB금융그룹",
-      "url": "https://www.jbfg.com/ko/prcenter/press.do",
+      "name": "KGC한국인삼공사",
+      "url": "https://www.kgc.co.kr/media-center/kgc-notice/list.do",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1570,6 +1515,17 @@
       "error_type": "no_articles"
     },
     {
+      "name": "넥슨",
+      "url": "https://kr-newsroom.nexon.com/",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
       "name": "대상",
       "url": "https://www.daesang.com",
       "type": "company",
@@ -1579,6 +1535,50 @@
       "success": true,
       "error": null,
       "error_type": "no_articles"
+    },
+    {
+      "name": "뉴스와이어",
+      "url": "https://api.newswire.co.kr/rss/all",
+      "type": "rss",
+      "cat": "RSS",
+      "count": 11,
+      "detected": 11,
+      "success": true,
+      "error": null,
+      "error_type": null
+    },
+    {
+      "name": "코오롱인더스트리",
+      "url": "https://www.kolonindustries.com/kr/promote/news",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "JB금융그룹",
+      "url": "https://www.jbfg.com/ko/prcenter/press.do",
+      "type": "company",
+      "cat": "기업",
+      "count": 0,
+      "detected": 0,
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
+    },
+    {
+      "name": "한국도로공사",
+      "url": "https://www.ex.co.kr/site/com/pageProcess.do",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": false,
+      "error": "HTTPSConnectionPool(host='www.ex.co.kr', port=443): Max retr",
+      "error_type": "timeout"
     },
     {
       "name": "한국콜마",
@@ -1603,6 +1603,17 @@
       "error_type": "no_articles"
     },
     {
+      "name": "한국지역난방공사",
+      "url": "https://www.kdhc.co.kr/kdhc/bbs/B0000038/list.do?menuNo=200125",
+      "type": "gov",
+      "cat": "공기업",
+      "count": 0,
+      "detected": 0,
+      "success": false,
+      "error": "HTTPSConnectionPool(host='www.kdhc.co.kr', port=443): Max re",
+      "error_type": "timeout"
+    },
+    {
       "name": "오리온",
       "url": "https://www.orionworld.com/board/list/87",
       "type": "company",
@@ -1614,19 +1625,19 @@
       "error_type": "no_articles"
     },
     {
-      "name": "광동제약",
-      "url": "https://www.kdpharm.com",
+      "name": "바디프랜드",
+      "url": "https://bodyfriend.co.kr",
       "type": "company",
       "cat": "기업",
       "count": 0,
       "detected": 0,
-      "success": false,
-      "error": "HTTPSConnectionPool(host='www.kdpharm.com', port=443): Max r",
-      "error_type": "blocked"
+      "success": true,
+      "error": null,
+      "error_type": "no_articles"
     },
     {
-      "name": "바디프랜드",
-      "url": "https://bodyfriend.co.kr",
+      "name": "풀무원",
+      "url": "https://www.pulmuone.com",
       "type": "company",
       "cat": "기업",
       "count": 0,
@@ -1647,25 +1658,14 @@
       "error_type": "timeout"
     },
     {
-      "name": "풀무원",
-      "url": "https://www.pulmuone.com",
-      "type": "company",
-      "cat": "기업",
-      "count": 0,
-      "detected": 0,
-      "success": true,
-      "error": null,
-      "error_type": "no_articles"
-    },
-    {
-      "name": "두산그룹",
-      "url": "https://www.doosannewsroom.com/",
+      "name": "삼성전자",
+      "url": "https://news.samsung.com/kr/category/%ED%94%84%EB%A0%88%EC%8A%A4%EC%84%BC%ED%84%B0/%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C",
       "type": "company",
       "cat": "기업",
       "count": 0,
       "detected": 0,
       "success": false,
-      "error": "HTTPSConnectionPool(host='www.doosannewsroom.com', port=443)",
+      "error": "HTTPSConnectionPool(host='news.samsung.com', port=443): Read",
       "error_type": "timeout"
     }
   ]
